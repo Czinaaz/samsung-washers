@@ -17,7 +17,7 @@ const washersData: Washer [] = [
         features: ['Drzwi AddWash', 'Panel AI Control', 'Silnik inwerterowy', 'Wyświetlacz elektroniczny'],
         energyClass: 'A',
         price: 2899,
-        image: '/washer1.png',
+        image: './washer1.png',
     },
     {
         id: 2,
@@ -26,7 +26,7 @@ const washersData: Washer [] = [
         features: ['Drzwi AddWash', 'Panel AI Control', 'Silnik inwerterowy', 'Wyświetlacz elektroniczny'],
         energyClass: 'F',
         price: 3199,
-        image: '/washer2.png',
+        image: './washer2.png',
     },
     {
         id: 3,
@@ -35,7 +35,7 @@ const washersData: Washer [] = [
         features: ['Drzwi AddWash', 'Panel AI Control', 'Silnik inwerterowy', 'Wyświetlacz elektroniczny'],
         energyClass: 'A',
         price: 3159,
-        image: '/washer1.png',
+        image: './washer1.png',
     },
     {
         id: 4,
