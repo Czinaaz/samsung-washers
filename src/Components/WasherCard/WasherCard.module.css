@@ -1,0 +1,58 @@
+.washerCard {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.washerCard:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.washerCard img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.washerCard h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.washerCard p {
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin: 10px 0;
+}
+
+.chooseButton {
+    margin-top: auto;
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.selected {
+    background-color: #001830; 
+}
