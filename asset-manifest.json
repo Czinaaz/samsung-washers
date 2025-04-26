@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/samsung-washers/static/css/main.b932213a.css",
-    "main.js": "/samsung-washers/static/js/main.5de499d1.js",
+    "main.css": "/samsung-washers/static/css/main.e69f9de7.css",
+    "main.js": "/samsung-washers/static/js/main.ec6cdc9c.js",
     "static/js/453.2f6e75a6.chunk.js": "/samsung-washers/static/js/453.2f6e75a6.chunk.js",
+    "static/media/washer2.png": "/samsung-washers/static/media/washer2.ac789e50b0f72e7bc1c5.png",
+    "static/media/washer1.png": "/samsung-washers/static/media/washer1.686b9db117fd5056c66e.png",
     "index.html": "/samsung-washers/index.html",
-    "main.b932213a.css.map": "/samsung-washers/static/css/main.b932213a.css.map",
-    "main.5de499d1.js.map": "/samsung-washers/static/js/main.5de499d1.js.map",
+    "main.e69f9de7.css.map": "/samsung-washers/static/css/main.e69f9de7.css.map",
+    "main.ec6cdc9c.js.map": "/samsung-washers/static/js/main.ec6cdc9c.js.map",
     "453.2f6e75a6.chunk.js.map": "/samsung-washers/static/js/453.2f6e75a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b932213a.css",
-    "static/js/main.5de499d1.js"
+    "static/css/main.e69f9de7.css",
+    "static/js/main.ec6cdc9c.js"
   ]
 }
