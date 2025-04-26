@@ -19,20 +19,22 @@ const MainComponent = () => {
             <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
             <div className={styles.washersList}>
-            <p className={styles.results}>Liczba wyników: {filteredWashers.length}</p>
-            <div className={styles.washerCard}>
-                {visibleWashers.map((washer) => (
-                    <WasherCard key={washer.id} washer={washer} />
-                ))}
+                <p className={styles.results}>Liczba wyników: {filteredWashers.length}</p>
+                <div className={styles.washerCard}>
+                    {visibleWashers.map((washer) => (
+                        <WasherCard key={washer.id} washer={washer} />
+                    ))}
+                </div>
             </div>
-            {visibleCount < filteredWashers.length && (
-                <button onClick={() => setVisibleCount(prev => prev + 6)}>Load more</button>
-            )}
+            <div className={styles.buttonSection}>
+                    {visibleCount < filteredWashers.length && (
+                        <button className={styles.loadButton} onClick={() => setVisibleCount(prev => prev + 6)}>Pokaż więcej &#x25BE;</button>
+                    )}
 
-            {visibleCount > 6 && (
-                <button onClick={() => setVisibleCount(6)}>Show less</button>
-            )}
-        </div>
+                    {visibleCount > 6 && (
+                        <button className={styles.loadButton} onClick={() => setVisibleCount(6)}>Pokaż mniej &#x25B4;</button>
+                    )}
+            </div>
         </div>
 
     )

@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/samsungone');
+
 .washerCard {
     background: #fff;
     border: 1px solid #e0e0e0;
@@ -24,35 +26,78 @@
     font-size: 18px;
     font-weight: bold;
     text-align: left;
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
+}
+
+.informationList {
+    list-style: none;
+    text-align: left;
+    padding: 0%;
+}
+
+
+.washerCard li p {
+    font-weight: 100;
+    color: #767676;
+    font-size: 12px;
+    margin: 5px 0;
+    text-align: left;
 }
 
 .washerCard p {
-    font-size: 14px;
-    margin: 5px 0;
-    text-align: center;
+    font-weight: 100;
+    color: #767676;
+    font-size: 12px;
+    margin: 5px 0 15px 0;
+    text-align: left;
 }
 
-.price {
-    font-size: 20px;
-    font-weight: bold;
+.washerCard span {
     color: #000;
-    margin: 10px 0;
+    font-weight: bold;
+}
+
+.priceSection {
+    margin: 15px 0 10px 0;
+}
+
+.regs {
+    font-weight: 100;
+    color: #767676;
+    font-size: 12px;
+    text-align: left;
+    padding-bottom: -5px;
+}
+.price {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.priceSection p {
+
+    font-weight: 100;
+    color: #767676;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
 }
 
 .chooseButton {
     margin-top: auto;
-    background-color: #0066cc;
+    background-color: #1428A0;
     color: white;
-    padding: 10px 20px;
+    margin: 10px 0;
+    padding: 10px 40px;
     border: none;
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 24px;
+    font-size: 12px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 
 .selected {
-    background-color: #001830; 
+    background-color: #1C1C1C; 
 }
