@@ -1,38 +1,82 @@
 
-
-.main {
-    background-color: #F8F8F8;
-    min-height: 10vh;
-}
-
 .searchBar {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .searchBar input {
-    width: 300px;
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    width: 259px;
+    padding: 10px 10px;
+    border: none;
+    color: #000000;
+    font-size: 14px;
+    outline: none;
+}
+
+h5 {
     font-size: 16px;
+    margin: 5px 0;
+    font-weight: bold;
 }
 
 .filters {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    padding-left: 10px;
+    margin: 0;
+    
 }
 
 .filters select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
+    width: 200px;
+    padding: 10px 15px;
+    border: unset;
+    outline: none;
+    font-size: 12px;
     background-color: #fff;
     cursor: pointer;
+    gap: 5px
+    
 }
+
+
+select,
+::picker(select) {
+    appearance: base-select;
+    color:#000000;
+    border-radius: unset;
+}
+::picker(select) {
+    border: none;
+}
+
+option::before {
+    display: none;
+}
+
+option {
+    padding: 7px 15px;
+    
+}
+
+/* select {
+    padding: 10px;
+    transition: 0.4s;
+    margin-bottom: 5px;
+} */
+select:focus {
+    background: #ffffff;
+}
+select::picker-icon {
+    font-size: 16px;
+    color: #8D8D8D;
+    transition: 0.1s rotate;
+}
+select:open::picker-icon {
+    rotate: 180deg;
+}
+
+

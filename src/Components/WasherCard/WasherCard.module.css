@@ -2,8 +2,7 @@
 
 .washerCard {
     background: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
+    border-radius: 20px;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -11,12 +10,12 @@
     transition: box-shadow 0.3s ease;
 }
 
-.washerCard:hover {
+/* .washerCard:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .washerCard img {
-    width: 70%;
+    width: 80%;
     height: auto;
     object-fit: contain;
     margin-bottom: 10px;
@@ -35,7 +34,10 @@
     padding: 0%;
 }
 
-
+.informationList span {
+    color: #000;
+    font-weight: bold;
+}
 .washerCard li p {
     font-weight: 100;
     color: #767676;
@@ -52,13 +54,49 @@
     text-align: left;
 }
 
-.washerCard span {
-    color: #000;
-    font-weight: bold;
+.energySection {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #767676; 
 }
 
+.energyBadge {
+    
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 25px 2px 8px;
+    margin: 5px 0;
+    position: relative;
+    background-color: #009949;
+    color: #fff;
+    display: inline-block;
+}
+
+.energyBadge span {
+    color: #fff;
+    font-weight: bold;
+}
+.energyBadge::after {
+    content: '';
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 8.9px solid transparent;
+    border-bottom: 8.9px solid transparent;
+    border-left: 8px solid #009949;
+}
+
+
+
 .priceSection {
-    margin: 15px 0 10px 0;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .regs {
@@ -70,9 +108,30 @@
 }
 .price {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: bold;
     color: #000;
     margin: 0;
+    display: flex;
+    align-items: flex-start;
+}
+.priceDetails {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+}
+
+.detailsTop {
+    margin-top: 80%;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.detailsBottom {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 700;
+    padding: 10% 0 0 5px;
 }
 
 .priceSection p {

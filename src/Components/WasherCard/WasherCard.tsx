@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import styles from './WasherCard.module.css';
 
@@ -9,6 +8,7 @@ interface Washer {
     features: string[];
     energyClass: string;
     price: number;
+    popularity: number;
     image: string;
 }
 
@@ -36,12 +36,22 @@ const WasherCard = ({ washer }: WasherCardProps) => {
                 <li><p>Funkcje: <span>{washer.features.join(', ')}</span></p></li>
             </ul>
 
-
-            <p>Klasa energetyczna <span>{washer.energyClass}</span></p>
+            <div  className={styles.energySection}>
+                Klasa energetyczna 
+                <div className={styles.energyBadge} >
+                    {washer.energyClass}
+                </div>
+            </div>
             
             <div className={styles.priceSection}>
-                <abbr className={styles.regs}>Cena obowiązuje: 15.09.2022 - 21.09.2022</abbr>
-                <h6 className={styles.price}>{washer.price} zł</h6>
+                <span className={styles.regs}>Cena obowiązuje: 15.09.2022 - 21.09.2022</span>
+                <div className={styles.price}>
+                    {washer.price} 
+                    <div className={styles.priceDetails}>
+                        <span className={styles.detailsTop}>00</span>
+                        <span className={styles.detailsBottom}>zł</span>
+                    </div>
+                </div>
                 <p className={styles.pays}>53,31 zł x 60 rat</p>
             </div>
             
