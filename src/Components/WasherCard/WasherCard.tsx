@@ -5,6 +5,7 @@ interface Washer {
     id: number;
     name: string;
     capacity: string;
+    sortCapacity: number,
     features: string[];
     energyClass: string;
     price: number;

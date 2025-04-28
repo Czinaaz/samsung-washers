@@ -24,7 +24,7 @@ const MainComponent = () => {
     const sortedWashers = [...filteredWashers].sort((a, b) => {
         if (sortOption === 'popularity') return a.popularity - b.popularity;
         if (sortOption === 'priceAsc') return a.price - b.price;
-        if (sortOption === 'priceDesc') return b.price - a.price;
+        if (sortOption === 'capacityAsc') return a.sortCapacity - b.sortCapacity;
         return a.name.localeCompare(b.name);
     });
 

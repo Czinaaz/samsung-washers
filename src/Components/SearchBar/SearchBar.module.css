@@ -1,4 +1,3 @@
-
 .searchBar {
     width: 100%;
     display: flex;
@@ -21,62 +20,41 @@ h5 {
     font-weight: bold;
 }
 
+
+
+
 .filters {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 10px;
-    margin: 0;
-    
+    gap: 20px;
 }
 
-.filters select {
-    width: 200px;
-    padding: 10px 15px;
-    border: unset;
-    outline: none;
-    font-size: 12px;
-    background-color: #fff;
-    cursor: pointer;
-    gap: 5px
-    
-}
-
-
-select,
-::picker(select) {
-    appearance: base-select;
-    color:#000000;
-    border-radius: unset;
-}
-::picker(select) {
+.filtersSection {
+    flex: 1 1 200px;
+    min-width: 200px;
     border: none;
 }
 
-option::before {
-    display: none;
+
+
+.select {
+    font-size: 12px;
+    line-height: 22px;
 }
 
-option {
-    padding: 7px 15px;
-    
-}
 
-/* select {
-    padding: 10px;
-    transition: 0.4s;
-    margin-bottom: 5px;
-} */
-select:focus {
-    background: #ffffff;
-}
-select::picker-icon {
-    font-size: 16px;
+.triangle {
+    display: inline-block;
+    transition: transform 0.1s ease-in-out;
+    margin-right: 10px;
+    font-size: 13px;
     color: #8D8D8D;
-    transition: 0.1s rotate;
 }
-select:open::picker-icon {
-    rotate: 180deg;
+
+.triangleOpen {
+    transform: rotate(180deg);
 }
+
+
 
 
